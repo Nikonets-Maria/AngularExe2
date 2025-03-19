@@ -1,0 +1,59 @@
+
+.task_list_content{
+
+}
+
+.task_content{
+    width: 1088px;
+    min-height: 70px;
+    border: none;
+    border-radius: 20px;
+    margin: 20px;
+
+    background-color: #ECF0F1;
+
+    display: flex;
+}
+
+.day_name_fied{
+    width: 80px;
+    min-height: 70px;
+    border: none;
+    border-start-start-radius: 20px;
+    border-end-start-radius: 20px;
+
+    background-color: #34495E;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+}
+
+.task_field{
+    width: 1000px;
+    min-height: 70px;
+    border: none;
+    border-end-end-radius: 20px;
+    border-start-end-radius: 20px;
+
+    background-color: #ECF0F1;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.task_elem{
+    width: 286px;
+    height: 47px;
+    margin: 5px;
+    border: none;
+
+    background-color: #1ABC9C;
+    color: white;
+    /* background-color: #E74C3C; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

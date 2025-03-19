@@ -1,0 +1,50 @@
+
+.form_content{
+    width: 1088px;
+    height: 179px;
+    margin: 10px;
+    margin-top: 79px;
+
+    background-color: #ECF0F1;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 4px 4 0 black;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.day_select{
+    width: 253px;
+    height: 45px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.importance_select{
+    width: 257px;
+    height: 45px;
+    margin: 10px;
+    border: 1px solid black;
+    margin-left: 29px;
+
+}
+
+.description_input{
+    width: 544px;
+    height: 45px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.add_btn{
+    width: 163px;
+    height: 45px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 23px;
+    background-color: #1ABC9C;
+    color: white;
+}
+

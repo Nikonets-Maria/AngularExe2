@@ -1,0 +1,20 @@
+
+<div class="task_list_content">
+    @for(task of tasks; track task.idDay){
+    <div class="task_content">
+            <div class="day_name_fied">
+                <h1>{{ task.dayTitle}}</h1>
+            </div>
+            <div class="task_field">
+                @for(taskElem of task.tasks; track taskElem.idTask){
+
+                <div class="task_elem">
+
+                    <h2>{{ taskElem.titleTask}}</h2>
+                    
+                </div>
+            }
+            </div>
+    </div>
+}
+</div>

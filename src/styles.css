@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+
+.main_content{
+    background-color: #1ABC9C;
+    min-height: 982px;
+}
