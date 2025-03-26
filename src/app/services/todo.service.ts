@@ -25,22 +25,45 @@ export class TodoService {
         { idTask: 2, titleTask: 'Task 2', priority: true },
       ]
     },
-
     {
       idDay: 2,
-      dayTitle: 'СР',
+      dayTitle: 'ВТ',
       tasks: [
         { idTask: 1, titleTask: 'Task 3', priority: true },
       ]
     },
     {
       idDay: 3,
-      dayTitle: 'ВТ',
+      dayTitle: 'СР',
       tasks: [
         { idTask: 1, titleTask: 'Task 4', priority: false },
         { idTask: 2, titleTask: 'Nikonets Maria', priority: true },
       ]
-    }
+    },
+    {
+      idDay: 4,
+      dayTitle: 'ЧТ',
+      tasks: [
+      ]
+    },
+    {
+      idDay: 5,
+      dayTitle: 'ПТ',
+      tasks: [
+      ]
+    },
+    {
+      idDay: 6,
+      dayTitle: 'СБ',
+      tasks: [
+      ]
+    },
+    {
+      idDay: 7,
+      dayTitle: 'ВС',
+      tasks: [
+      ]
+    },
     ];
 
   constructor() { }
