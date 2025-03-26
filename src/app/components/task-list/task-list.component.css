@@ -1,7 +1,7 @@
 
-.task_list_content{
+/* .task_list_content{
 
-}
+} */
 
 .task_content{
     width: 1088px;
@@ -56,4 +56,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.delete_icon {
+    display: none; /* Скрываем значок по умолчанию */
+    position: absolute; /* Позиционируем значок */
+    padding-left: 285px;
+    padding-bottom: 40px;
+}
+
+.task_elem:hover .delete_icon {
+    display: block; /* Показываем значок при наведении */
 }

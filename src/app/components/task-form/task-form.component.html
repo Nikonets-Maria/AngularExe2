@@ -1,8 +1,7 @@
-
 <div class="form_content">
-    <div class="select_content" >
-        <div class="">
-            <select class="day_select">
+    <div class="select_content">
+        <div>
+            <select class="day_select" [(ngModel)]="selectedDay">
                 <option value="">Выберите день</option>
                 <option value="monday">Пн</option>
                 <option value="tuesday">Вт</option>
@@ -12,20 +11,14 @@
                 <option value="saturday">Суб</option>
                 <option value="sunday">Вс</option>
             </select>
-            <select class="importance_select">
-                <option value="">Выберите важность</option>
-                <option value="important">Важно</option>
-                <option value="no_matter">Не важно</option>
+            <select class="importance_select" [(ngModel)]="priority">
+                <option [ngValue]="false">Не важно</option>
+                <option [ngValue]="true">Важно</option>
             </select>
-    
         </div>
         <div>
-            <input class="description_input" type="text" placeholder="Описание">
+            <input class="description_input" type="text" [(ngModel)]="taskTitle" placeholder="Описание">
         </div>
-
-
-        </div>
-
-    <button class="add_btn">Добавить</button>
-
+    </div>
+    <button class="add_btn" (click)="addTask()">Добавить</button>
 </div>
