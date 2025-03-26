@@ -20,17 +20,17 @@ export class TaskFormComponent {
   addTask() {
     const dayId = this.getDayId(this.selectedDay);
     const newTask: Task = {
-      idTask: Date.now(), // Используем timestamp как уникальный ID
+      idTask: Date.now(), 
       titleTask: this.taskTitle,
       priority: this.priority
     };
 
     const day = this.todoService.tasks.find(task => task.idDay === dayId);
     if (day) {
-      day.tasks.push(newTask); // Добавляем новую задачу
+      day.tasks.push(newTask); 
     }
 
-    this.resetForm(); // Сбрасываем форму
+    this.resetForm(); 
   }
 
   private getDayId(day: string): number {
@@ -42,13 +42,13 @@ export class TaskFormComponent {
       case 'friday': return 5;
       case 'saturday': return 6;
       case 'sunday': return 7;
-      default: return 0; // Если день не выбран
+      default: return 0; 
     }
   }
 
   private resetForm() {
     this.selectedDay = '';
     this.taskTitle = '';
-    this.priority = false; // Сбрасываем приоритет
+    this.priority = false; 
   }
 }

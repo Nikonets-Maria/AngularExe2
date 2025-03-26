@@ -16,11 +16,11 @@ export class TaskListComponent implements OnInit {
   constructor(private todoService: TodoService) {}
 
   ngOnInit() {
-    this.tasks = this.todoService.tasks; // Получаем задачи из сервиса
+    this.tasks = this.todoService.tasks; 
   }
 
   deleteTask(dayId: number, taskId: number) {
-    this.todoService.deleteTask(dayId, taskId); // Удаляем задачу через сервис
-    this.tasks = this.todoService.tasks; // Обновляем локальные данные
+    this.todoService.deleteTask(dayId, taskId); 
+    this.tasks = this.todoService.tasks; 
   }
 }
